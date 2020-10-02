@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title></head
+  ><style>
+    body {
+      background: red;
+    }
+    p {
+      display: none;
+    }
+
+    /*Tablet*/
+    @media (max-width: 768px) {
+      /*Max width bootstrap gibi 768px'in altına düşerse çalışıyor,*/
+      body {
+        background: blue;
+      }
+    }
+    /*Mobil*/
+    @media (max-width: 500px) {
+      body {
+        background: green;
+      }
+    }
+    @media (min-width: 768px) {
+      /* 768px'in üstüne çıkarsa çalışıyor,*/
+      p {
+        display: block;
+        color: white;
+      }
+    }
+  </style>
+  <body>
+      
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+      sequi.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 75%;
+            margin: 0 auto;
+            min-height: 600px;
+            /*height'i min-height' çevirirsen itemlar containerdan taşmaz*/
+            background: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /*space-between sağda solda boşluk yok ama kendi aralarında eşit boşluklar responsive,
+        space around kenarlardaki boşlukların iki katı ara boşluk responsive,
+        space evenly kenar ve ara boşluklar eşit responsive*/
+            /*align-items:center /*itemları dikeyde konumunu belirlemek için bu lazım, 
+        default strechtir, eğer içindeki itemların bir height'i yoksa içindeki itemlar bulunduğu height'i kaplar.        
+        bizde box'un height'ı 200px'dir yani strech çalışmaz.  
+        center ortaya getirir. flex-start başlangıç, flex end son*/
+            flex-wrap: wrap;
+            /*normalde bu özellik default nowraptır,
+        eğer bu özellik nowrap olursa eklenen yeni itemlara yer açmak için
+        tüm itemların width'i küçülür, wrap ise itemlar alt satıra geçer.
+        reverse-wrap da ise itemlar aşağıdan başlar.
+        */
+        }
+        
+        .box {
+            text-align: center;
+            background: #f2f2f2;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Article 1</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 2</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="box">
+            <h1>Article 3</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</body>
+
+</html>

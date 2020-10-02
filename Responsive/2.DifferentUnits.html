@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Responsive Units
+    em, rem, %, vw, vh -->
+    <style>
+      html {
+        font-size: 20px;
+      }
+      div {
+        font-size: 1.5em;
+      }
+      p {
+        font-size: 1.5em;
+        padding: 1.5em;
+      }
+      hr {
+        background: black;
+        height: 2px;
+      }
+      .rem {
+        font-size: 1.5rem;
+      }
+      .yuzde {
+        font-size: 50%;
+      }
+      .vw{
+          width: 40vw;
+          height: 10vh;
+          background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>em</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptas!
+      </p>
+      <p>em parent'a bakar</p>
+
+      <hr />
+
+      <h1>rem</h1>
+      <p class="rem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptas!
+      </p>
+      <p class="rem">rem html'e bakar</p>
+
+      <hr />
+
+      <h1>%</h1>
+      <p class="yuzde">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptas!
+      </p>
+      <p class="yuzde">% html'e bakar</p>
+
+      <hr />
+      <div class="vw"></div>
+      <hr />
+    </div>
+  </body>
+</html>

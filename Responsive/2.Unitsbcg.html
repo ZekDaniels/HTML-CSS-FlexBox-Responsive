@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .background {
+        height: 100vh;
+
+        background: url("../CSS/images/bcg2.jpg") center center no-repeat;
+        background-size: cover;
+        padding: 10rem;
+      }
+      div {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+        letter-spacing: 2px;
+      }
+      @media (max-width: 500px) {
+        h1 {
+          margin-bottom: 0.5rem;
+          font-size: 2rem;
+        }
+        p {
+        font-size: 1rem;
+        letter-spacing: 2px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <h1>Welcome To The Site</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+  </body>
+</html>
